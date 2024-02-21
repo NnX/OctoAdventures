@@ -1,0 +1,5 @@
+@set PlayerName="Mistery Man"
+@input PlayerName summary:"Choose your name."
+@stop
+player: You can call me {PlayerName}.
+@stop

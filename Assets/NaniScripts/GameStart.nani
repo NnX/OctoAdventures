@@ -1,0 +1,34 @@
+@back bg_Scene
+@bgm loop1
+@set "PlayerName=\"Mistery Man\""
+
+@input PlayerName summary:"Choose your name."
+@stop
+ 
+@printer TextDialogPanel
+ 
+player: Here you will be known as {PlayerName}.
+# Start
+@char npc1.Neutral
+npc1: Welcome {PlayerName}. This is your first time int this world?
+@choice Yes
+@choice ...
+@stop
+
+# FirstQuest
+npc1: Ok. Then your first mission will be to goto to next location
+Select an action.[skipInput]
+@choice "Lets go" @goto .Location2
+@choice "Stay here" @goto .FirstQuest
+@stop
+
+# Location2
+@bgm loop1 fade:0.5 volume:0
+@bgm Danger volume:0.4
+@back bg3 id:bg3
+@char npc1.Neutral visible:false
+@char npc2.Neutral
+npc2: Hello, I'm npc2, you came here to finish quest?
+@choice "Yes. Let finish it already"
+@choice ...
+@stop

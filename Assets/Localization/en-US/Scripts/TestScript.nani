@@ -1,0 +1,7 @@
+; English <en> to English (United States) <en-US> localization document for `TestScript` naninovel script
+
+# f4c8a666
+; @input PlayerName summary:"Choose your name."
+
+# 3d015414
+; player: You can call me {PlayerName}.

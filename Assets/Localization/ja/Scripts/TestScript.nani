@@ -1,0 +1,7 @@
+; English <en> to Japanese <ja> localization document for `TestScript` naninovel script
+
+# f4c8a666
+; @input PlayerName summary:"Choose your name."
+
+# 3d015414
+; player: You can call me {PlayerName}.

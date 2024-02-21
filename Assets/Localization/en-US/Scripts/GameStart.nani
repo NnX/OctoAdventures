@@ -1,0 +1,25 @@
+; English <en> to English (United States) <en-US> localization document for `GameStart` naninovel script
+
+# f4c8a666
+; @input PlayerName summary:"Choose your name."
+@input PlayerName summary:englishName
+
+# 3d015414
+; player: You can call me {PlayerName}.
+player: call me {PlayerName}.
+
+# 254abc1c
+; npc1: Welcome {PlayerName}. This is your first time int this world?
+npc1: Welcome {PlayerName}. This is your first time int this world?
+
+# 2364d70b
+; @choice Yes
+@choice Yes
+
+# eb38ea03
+; @choice No
+@choice No
+
+# bd5f88d9
+; @choice "I don't know"
+@choice "I don't know"
