@@ -3,11 +3,11 @@ using UnityEngine;
 
 public class GameContext : MonoBehaviour
 {
-    private MiniGameService miniGameService;
+    private MiniGameService _miniGameService;
 
     private async void Start()
     {
-        miniGameService = Engine.FindService<MiniGameService>(service => service.CanPlay());
+        _miniGameService = Engine.FindService<MiniGameService>(service => service.CanPlay());
         //miniGameService.InitializeServiceAsync();
         await UniTask.Delay(5000);
         PlayMiniGame();
@@ -16,6 +16,6 @@ public class GameContext : MonoBehaviour
 
     private void PlayMiniGame()
     {
-        miniGameService.PlayGame();
+        _miniGameService.PlayGame();
     }
 }
